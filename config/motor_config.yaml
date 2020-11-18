@@ -1,0 +1,14 @@
+polulu_motor:
+  i2c_bus: 3
+  motor_address: 13
+  rate: 50 # hz
+# percentages
+  max_speed: 40
+  max_acc: 40
+  max_dec: 40
+  ###
+  brake_dur: 1000 #ms
+  set_target_speed_topic: speed_command
+  set_brake_amount_topic: brake_command
+  get_target_speed_topic: get_target_speed
+  get_current_speed_topic: get_current_speed

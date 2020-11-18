@@ -1,0 +1,4 @@
+<launch>
+    <rosparam command="load" file="$(find polulu_i2c_ros)/config/motor_config.yaml"/>
+    <node pkg="polulu_i2c_ros" type="motor_driver.py" name="motor_driver_node" output="screen"/>
+</launch>
